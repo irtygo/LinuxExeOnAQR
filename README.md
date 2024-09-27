@@ -1,30 +1,38 @@
-# QR Code ELF Executable
+# Small ELF Project
 
-This project captures a QR code from a webcam, decodes it, and saves the output as an executable ELF file. The script allows you to run arbitrary code encoded in a QR code.
+## Overview
+
+This project demonstrates a minimal ELF executable that outputs a message to standard output. The ELF file is designed to be compact and showcases basic system call usage in assembly language.
 
 ## Features
 
-- Captures QR code data from your webcam in real-time.
-- Decodes the QR code and saves the output as a Linux executable (`qr.elf`).
-- Simple and easy to use.
+- **Size:** Less than or equal to **512 bytes**.
+- Outputs the message: `"I am an app on a QR\n"` when executed.
+- Built using assembly language with no dependencies on standard libraries, ensuring a small footprint.
 
-## Prerequisites
+## Requirements
 
-Make sure you have the following installed on your Linux system:
+- Linux system
+- Development tools: `nasm`
 
-- **zbar**: For capturing and decoding QR codes.
-- **bash**: The script is written in bash, which is standard on most Linux distributions.
+## Building the ELF
 
-### Installation
+1. Clone the repository:
 
-You can install `zbar` using your package manager. For example:
+   ```bash
+   git clone https://github.com/Last-Hub-vode/LinuxExeOnAQR/
+   cd LinuxExeOnAQR
+   nasm -f bin header.asm -o a.out
+   ```
 
-```bash
-# For Ubuntu/Debian
-sudo apt-get install libzbar0 zbar-tools
+## Running the ELF
+  ```bash
+ ./a.out (for direct)
+run real.sh to scan qr code and run it.
+  ```
 
-# For Fedora
-sudo dnf install zbar
+## License
+This project, including the ELF file, is licensed under the Unlicense.
 
-# For Arch Linux
-sudo pacman -S zbar
+## Acknowledgments
+. Inspired by various resources on ELF file structure and assembly programming.
