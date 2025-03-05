@@ -35,4 +35,5 @@ run real.sh to scan qr code and run it.
 This project, including the ELF file, is licensed under the Unlicense.
 
 ## Acknowledgments
-. Inspired by various resources on ELF file structure and assembly programming.
+Inspired by various resources on ELF file structure and assembly programming.
+I forgot to mention this before but ChatGPT helped generate this README
