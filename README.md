@@ -20,7 +20,7 @@ This project demonstrates a minimal ELF executable that outputs a message to sta
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Last-Hub-vode/LinuxExeOnAQR/
+   git clone https://github.com/irtygo/LinuxExeOnAQR/
    cd LinuxExeOnAQR
    nasm -f bin header.asm -o a.out
    ```
@@ -35,5 +35,5 @@ run real.sh to scan qr code and run it.
 This project, including the ELF file, is licensed under the Unlicense.
 
 ## Acknowledgments
-Inspired by various resources on ELF file structure and assembly programming.
-I forgot to mention this before but ChatGPT helped generate this README
+- Inspired by various resources on ELF file structure and assembly programming.
+- I forgot to mention this before but ChatGPT helped generate this README
